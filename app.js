@@ -26,6 +26,7 @@
 			.controller('nameCalculatorController' , function($scope){
 				$scope.name = "";
 				$scope.totalValue = 0;
+
 				
 				$scope.displayNumberic = function(){
 					var totalValueNumber =calculateValue($scope.name);
@@ -43,5 +44,9 @@
 					return totalStirngValue ;
 				};
 
+				console.log($scope);
+
 			});
+
+
 })();
